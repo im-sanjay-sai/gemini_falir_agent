@@ -1,0 +1,133 @@
+{
+  "sessions": {
+    "test_session_12345": {
+      "created_at": "2025-09-29T04:44:38.695157",
+      "caller_id": "John_Doe_555-1234",
+      "information_count": 7,
+      "status": "ended",
+      "last_activity": "2025-09-29T04:44:38.695973",
+      "end_time": "2025-09-29T04:44:38.696146",
+      "end_reason": "customer_qualified_transfer"
+    },
+    "test_session_67890": {
+      "created_at": "2025-09-29T04:44:38.696548",
+      "caller_id": "Jane_Smith_555-5678",
+      "information_count": 2,
+      "status": "ended",
+      "last_activity": "2025-09-29T04:44:38.696761",
+      "end_time": "2025-09-29T04:44:38.696941",
+      "end_reason": "not_qualified_insufficient_debt"
+    }
+  },
+  "shared_data": {
+    "call_logs": [
+      {
+        "id": "6d79047d-3710-4528-8830-78b3b2343af1",
+        "session_id": "test_session_12345",
+        "caller_id": "John_Doe_555-1234",
+        "end_time": "2025-09-29T04:44:38.696143",
+        "reason": "customer_qualified_transfer",
+        "duration": 420,
+        "information_shared_count": 7
+      },
+      {
+        "id": "434b6343-3b9a-4090-b610-5b3559edd463",
+        "session_id": "test_session_67890",
+        "caller_id": "Jane_Smith_555-5678",
+        "end_time": "2025-09-29T04:44:38.696938",
+        "reason": "not_qualified_insufficient_debt",
+        "duration": 120,
+        "information_shared_count": 2
+      }
+    ],
+    "information_shared": [
+      {
+        "id": "3ffdb069-9cf7-4b7a-8860-e0224389fb44",
+        "session_id": "test_session_12345",
+        "caller_id": "John_Doe_555-1234",
+        "information": "Call started - opening script delivered",
+        "category": "conversation_flow",
+        "timestamp": "2025-09-29T04:44:38.695154",
+        "status": "received"
+      },
+      {
+        "id": "264502bd-18fe-46f7-a2c3-08b2cd6378dc",
+        "session_id": "test_session_12345",
+        "caller_id": "John_Doe_555-1234",
+        "information": "Customer confirmed identity: John Doe",
+        "category": "contact_details",
+        "timestamp": "2025-09-29T04:44:38.695310",
+        "status": "received"
+      },
+      {
+        "id": "35c5bdbc-2fc3-47d1-a709-1930431ce5ed",
+        "session_id": "test_session_12345",
+        "caller_id": "John_Doe_555-1234",
+        "information": "Customer has debts over $10,000 - qualified for initial screening",
+        "category": "qualification",
+        "timestamp": "2025-09-29T04:44:38.695427",
+        "status": "received"
+      },
+      {
+        "id": "ca9d244d-e7bc-456b-9ccb-4512879805d6",
+        "session_id": "test_session_12345",
+        "caller_id": "John_Doe_555-1234",
+        "information": "Customer has both tax debt ($15,000) and credit card debt ($25,000)",
+        "category": "debt_info",
+        "timestamp": "2025-09-29T04:44:38.695533",
+        "status": "received"
+      },
+      {
+        "id": "f4fe32ed-7938-42d0-bad6-f529122fc52c",
+        "session_id": "test_session_12345",
+        "caller_id": "John_Doe_555-1234",
+        "information": "Customer lives in California, employed full-time, monthly income $4,500",
+        "category": "personal_info",
+        "timestamp": "2025-09-29T04:44:38.695642",
+        "status": "received"
+      },
+      {
+        "id": "277726aa-f061-4d13-9677-df077fbe78e9",
+        "session_id": "test_session_12345",
+        "caller_id": "John_Doe_555-1234",
+        "information": "Customer has active checking account with Chase Bank",
+        "category": "personal_info",
+        "timestamp": "2025-09-29T04:44:38.695773",
+        "status": "received"
+      },
+      {
+        "id": "e3058a08-9e05-4a12-99eb-b3a887668294",
+        "session_id": "test_session_12345",
+        "caller_id": "John_Doe_555-1234",
+        "information": "Customer qualified for debt relief program - meets all criteria",
+        "category": "qualification",
+        "timestamp": "2025-09-29T04:44:38.695972",
+        "status": "received"
+      },
+      {
+        "id": "621b9bad-8595-4f92-bc16-999271d5ab89",
+        "session_id": "test_session_67890",
+        "caller_id": "Jane_Smith_555-5678",
+        "information": "Call started - opening script delivered",
+        "category": "conversation_flow",
+        "timestamp": "2025-09-29T04:44:38.696544",
+        "status": "received"
+      },
+      {
+        "id": "421ea887-d975-4cc0-884e-34c3b5ccc70a",
+        "session_id": "test_session_67890",
+        "caller_id": "Jane_Smith_555-5678",
+        "information": "Customer has only $8,000 in debt - does not meet $10,000 minimum",
+        "category": "qualification",
+        "timestamp": "2025-09-29T04:44:38.696759",
+        "status": "received"
+      }
+    ],
+    "active_sessions": {}
+  },
+  "metadata": {
+    "created_at": "2025-09-29T04:44:38.694640",
+    "version": "1.0",
+    "last_updated": "2025-09-29T04:44:38.696943"
+  }
+}

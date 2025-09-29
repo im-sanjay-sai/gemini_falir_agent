@@ -1,0 +1,13 @@
+{
+  "sessions": {},
+  "shared_data": {
+    "call_logs": [],
+    "information_shared": [],
+    "active_sessions": {}
+  },
+  "metadata": {
+    "created_at": "2025-09-29",
+    "version": "1.0",
+    "last_updated": null
+  }
+}
